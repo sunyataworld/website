@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "PORT=3456 next dev",
+    "format-staged": "pretty-quick --staged",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "start": "next start"
   },
   "dependencies": {
     "next": "11.1.2",
@@ -15,6 +17,10 @@
   },
   "devDependencies": {
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.4.0",
+    "pretty-quick": "^3.1.1"
   }
 }
