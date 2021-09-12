@@ -6,14 +6,15 @@
     "build": "next build",
     "dev": "PORT=3456 next dev",
     "format-staged": "pretty-quick --staged",
-    "lint": "next lint",
+    "lint": "next lint --fix",
     "prepare": "husky install",
     "start": "next start"
   },
   "dependencies": {
     "next": "11.1.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "sass": "^1.39.2"
   },
   "devDependencies": {
     "eslint": "7.32.0",

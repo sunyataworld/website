@@ -1,0 +1,56 @@
+// variables
+$bg-color: #191919;
+$primary-color: #7ed321;
+$secondary-color: #ff77a8;
+$text-color: #aaa;
+$link-color: #fff;
+
+// <link href="http://fonts.cdnfonts.com/css/monogram" rel="stylesheet" />
+//@font-face {
+//  font-family: 'Monogram';
+//  src: url('../public/fonts/monogram.ttf') format('truetype');
+//}
+
+@import url('http://fonts.cdnfonts.com/css/monogram');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: $text-color;
+  font-family: 'Monogram', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: $bg-color;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid $link-color;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary-color;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 60px;
+}
