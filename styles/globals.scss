@@ -1,6 +1,11 @@
 @use 'variables' as *;
 
-@import url('http://fonts.cdnfonts.com/css/monogram');
+// @import url('http://fonts.cdnfonts.com/css/monogram');
+
+@font-face {
+  font-family: 'Monogram';
+  src: url('../public/fonts/monogram.ttf') format('truetype');
+}
 
 * {
   box-sizing: border-box;
